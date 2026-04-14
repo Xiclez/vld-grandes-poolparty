@@ -117,10 +117,9 @@
         .price-item span { display: block; font-size: 0.8rem; text-transform: uppercase; color: #ccc; margin-bottom: 5px; }
         .price-item strong { font-size: 1.8rem; color: #fff; text-shadow: 0 0 10px var(--neon-pink); }
         
-        /* NUEVO: Estilo para la leyenda de vencimiento */
         .price-item p { 
             font-size: 0.7rem; 
-            color: #ff99cc; /* Un tono rosita suave */
+            color: #ff99cc; 
             margin-top: 8px; 
             line-height: 1.2;
             text-transform: uppercase;
@@ -278,6 +277,10 @@
             <p class="warning-text">⚠️ Pago Únicamente por transferencia Bancaria. <strong>Incluir nombre completo en concepto de pago.</strong></p>
 
             <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776175265/N%C3%BAmero_de_cuenta_6013_0177_2101_16__Transferencia_de_Azteca_a_Azteca__CLABE__SPEI___1271_5000_1772_101166-removebg-preview_pab6k5.png" alt="Datos Bancarios" class="bank-img">
+
+            <button onclick="downloadPaymentImage()" class="btn" style="margin-bottom: 20px; font-size: 0.8rem; padding: 10px 20px; width: auto; border-style: dashed;">
+                📥 Descargar Datos de Pago
+            </button>
 
             <p class="success-text">✅ Una vez validado tu pago, recibirás tu QR de acceso.</p>
 
@@ -447,7 +450,6 @@
 
         /* --- LÓGICA DE CUENTA REGRESIVA --- */
         function updateCountdown() {
-            // Fecha objetivo: Miércoles 29 de Abril 2026 12:00 PM CST (UTC-6)
             const targetDate = new Date("2026-04-29T12:00:00-06:00").getTime();
             const now = new Date().getTime();
             const difference = targetDate - now;
@@ -472,9 +474,27 @@
             document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
         }
 
-        // Ejecutar cada segundo
         setInterval(updateCountdown, 1000);
-        updateCountdown(); // Ejecución inicial
+        updateCountdown(); 
+
+        function downloadPaymentImage() {
+    const imageUrl = "https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776175265/N%C3%BAmero_de_cuenta_6013_0177_2101_16__Transferencia_de_Azteca_a_Azteca__CLABE__SPEI___1271_5000_1772_101166-removebg-preview_pab6k5.png";
+    const fileName = "Datos_de_Pago_VivaLaDance.png";
+
+    fetch(imageUrl)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        })
+        .catch(() => alert('Error al descargar la imagen. Por favor, toma una captura de pantalla.'));
+}
     </script>
 </body>
 </html>
