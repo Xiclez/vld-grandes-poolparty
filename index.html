@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Viva La Dance | Entre Grandes - Pool Party</title>
-    <meta name="description" content="Únete a la Pool Party de Viva La Dance y Entre Grandes. Open decks, techno, sonido fino y una vibra inmersiva que escala con cada hora. ¡Adquiere tu acceso ahora!">
-    <meta name="keywords" content="Pool Party, Viva La Dance, Entre Grandes, Techno, Música Electrónica, Evento, DJ, Open Decks, Fiesta">
-    <meta name="author" content="Viva La Dance">
-    <meta name="theme-color" content="#ff007f"> <meta property="og:type" content="website">
-    <meta property="og:url" content="https://v-ladance-grandes-poolparty.vercel.app/">
+    <meta name="description" content="Únete a la Pool Party de Viva La Dance y Entre Grandes. Open decks, techno, sonido fino y una vibra inmersiva que escala con cada hora.">
+    <meta name="theme-color" content="#ff007f">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://https://vld-grandes-poolparty.vercel.app/">
     <meta property="og:title" content="Viva La Dance | Entre Grandes - Pool Party">
-    <meta property="og:description" content="Open decks, techno, sonido fino y vibra nocturna. Prepárate para bailar dentro y fuera del agua. Consigue tus tickets aquí.">
+    <meta property="og:description" content="Consigue tus tickets aquí. Open decks, House Y Techno: sonido fino y buena vibra. ">
     <meta property="og:image" content="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121927/reescala_a_1_1__202604131340_d3ngmq.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="v-ladance-grandes-poolparty.vercel.app">
-    <meta property="twitter:url" content="https://v-ladance-grandes-poolparty.vercel.app/">
+    <meta property="twitter:url" content="https://https://vld-grandes-poolparty.vercel.app/">
     <meta name="twitter:title" content="Viva La Dance | Entre Grandes - Pool Party">
-    <meta name="twitter:description" content="Open decks, techno, sonido fino y vibra nocturna. Prepárate para bailar dentro y fuera del agua. Consigue tus tickets aquí.">
+    <meta name="twitter:description" content="Consigue tus tickets aquí. Open decks, House Y Techno: sonido fino y buena vibra. ">
     <meta name="twitter:image" content="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121927/reescala_a_1_1__202604131340_d3ngmq.jpg">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Rye&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Rye&family=Yellowtail&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -32,302 +31,213 @@
             --glass-border: rgba(255, 255, 255, 0.1);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body, html {
             font-family: 'Montserrat', sans-serif;
-            color: #fff;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
+            color: #fff; overflow-x: hidden; scroll-behavior: smooth;
         }
 
         /* --- FONDO DE VIDEO --- */
         .video-bg {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            object-fit: cover;
-            z-index: -2;
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            object-fit: cover; z-index: -2;
         }
 
         .overlay {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
             background: linear-gradient(to bottom, rgba(15, 5, 30, 0.5), rgba(15, 5, 30, 0.8));
             z-index: -1;
         }
 
         main {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            position: relative; z-index: 1; display: flex;
+            flex-direction: column; align-items: center;
         }
 
         /* --- HERO SECTION --- */
         #hero {
-            height: 100vh; width: 100%;
-            display: flex; flex-direction: column;
-            justify-content: center; align-items: center;
-            text-align: center; padding: 20px;
+            height: 100vh; width: 100%; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 20px;
         }
 
         .title-script {
-            font-family: 'Yellowtail', cursive;
-            font-size: 5rem; color: #fff;
-            line-height: 0.8;
+            font-family: 'Yellowtail', cursive; font-size: 5rem; color: #fff; line-height: 0.8;
             text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
             transform: rotate(-5deg); margin-bottom: -10px;
         }
 
         .title-main {
-            font-family: 'Rye', serif;
-            font-size: 2.5rem; letter-spacing: 2px;
-            color: #fff; text-shadow: 2px 2px 0px #000;
-            margin-top: 20px;
+            font-family: 'Rye', serif; font-size: 2.5rem; letter-spacing: 2px;
+            color: #fff; text-shadow: 2px 2px 0px #000; margin-top: 20px;
         }
 
         .title-sub {
-            font-size: 1.2rem; letter-spacing: 5px;
-            color: var(--neon-pink); margin-top: 10px;
-            text-shadow: 0 0 10px var(--neon-pink);
+            font-size: 1.2rem; letter-spacing: 5px; color: var(--neon-pink);
+            margin-top: 10px; text-shadow: 0 0 10px var(--neon-pink);
         }
 
         .hero-buttons {
-            margin-top: 50px; display: flex;
-            flex-direction: column; gap: 15px;
-            width: 100%; max-width: 300px;
+            margin-top: 50px; display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 300px;
         }
 
         .btn {
-            padding: 15px 30px; font-family: 'Montserrat', sans-serif;
-            font-weight: 700; font-size: 1rem;
-            text-transform: uppercase; color: #fff;
-            background: transparent; border: 2px solid var(--neon-pink);
-            border-radius: 30px; cursor: pointer; text-decoration: none;
-            transition: all 0.3s ease;
+            padding: 15px 30px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem;
+            text-transform: uppercase; color: #fff; background: transparent; border: 2px solid var(--neon-pink);
+            border-radius: 30px; cursor: pointer; text-decoration: none; transition: all 0.3s ease;
             box-shadow: 0 0 10px var(--neon-pink) inset, 0 0 10px var(--neon-pink);
         }
 
         .btn:hover {
-            background: var(--neon-pink);
-            box-shadow: 0 0 20px var(--neon-pink) inset, 0 0 20px var(--neon-pink);
+            background: var(--neon-pink); box-shadow: 0 0 20px var(--neon-pink) inset, 0 0 20px var(--neon-pink);
         }
 
         /* --- GLASSMORPHISM SECTIONS --- */
         .section-container {
-            width: 90%; max-width: 600px;
-            margin: 40px 0; padding: 30px 20px;
-            background: var(--dark-bg);
-            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            width: 90%; max-width: 600px; margin: 40px 0; padding: 30px 20px;
+            background: var(--dark-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
             border: 1px solid var(--glass-border); border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); text-align: center;
         }
 
         .section-title {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--neon-pink); margin-bottom: 20px;
-            letter-spacing: 2px; text-transform: uppercase;
-            text-shadow: 0 0 5px var(--neon-pink);
+            font-family: 'Montserrat', sans-serif; color: var(--neon-pink); margin-bottom: 20px;
+            letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 5px var(--neon-pink);
         }
+
+        /* --- TICKETS & PRECIOS --- */
+        .pricing-box {
+            display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;
+        }
+        .price-item {
+            background: rgba(255,0,127,0.1); border: 1px solid var(--neon-pink);
+            border-radius: 10px; padding: 15px; width: 130px; 
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .price-item span { display: block; font-size: 0.8rem; text-transform: uppercase; color: #ccc; margin-bottom: 5px; }
+        .price-item strong { font-size: 1.8rem; color: #fff; text-shadow: 0 0 10px var(--neon-pink); }
+        
+        /* NUEVO: Estilo para la leyenda de vencimiento */
+        .price-item p { 
+            font-size: 0.7rem; 
+            color: #ff99cc; /* Un tono rosita suave */
+            margin-top: 8px; 
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .bank-img { width: 100%; max-width: 400px; margin: 15px 0; border-radius: 10px; }
+        
+        .warning-text { color: #fff; font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px; background: rgba(255, 0, 0, 0.2); padding: 10px; border-radius: 10px; border: 1px dashed var(--neon-red); }
+        .success-text { color: #25D366; font-weight: bold; font-size: 1rem; margin-bottom: 25px; }
+
+        /* --- INFO EVENTO (FECHA, LUGAR, MAPA) --- */
+        .event-info {
+            display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px; text-align: left;
+            background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px; border: 1px solid var(--glass-border);
+        }
+        .event-info p { font-size: 1.1rem; }
+        .event-info i { color: var(--neon-pink); margin-right: 10px; width: 20px; text-align: center; display: inline-block; }
+
+        .map-container { width: 100%; border-radius: 15px; overflow: hidden; margin-bottom: 25px; border: 1px solid var(--neon-pink); }
+        .map-container iframe { width: 100%; height: 250px; border: none; display: block; }
 
         .description-text { font-size: 1rem; line-height: 1.6; margin-bottom: 15px; color: #eaeaea; }
 
-        /* --- CAROUSEL CONTROLS (ARROWS) --- */
-        .carousel-controls {
-            display: flex; justify-content: center;
-            gap: 20px; margin-top: 20px; width: 100%;
+        /* --- BOTÓN WHATSAPP --- */
+        .btn-wa {
+            display: inline-block; padding: 15px 25px; font-family: 'Montserrat', sans-serif; font-weight: 700;
+            font-size: 1rem; text-transform: uppercase; color: #fff; background: rgba(37, 211, 102, 0.2);
+            border: 2px solid #25D366; border-radius: 30px; text-decoration: none; transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.4); width: 100%; max-width: 300px;
         }
+        .btn-wa:hover { background: #25D366; box-shadow: 0 0 25px #25D366; }
 
+        /* --- CAROUSEL CONTROLS --- */
+        .carousel-controls { display: flex; justify-content: center; gap: 20px; margin-top: 20px; width: 100%; }
         .arrow-btn {
-            background: rgba(255, 0, 127, 0.1); border: 2px solid var(--neon-pink);
-            color: #fff; font-size: 1.2rem;
-            width: 45px; height: 45px; border-radius: 50%;
-            cursor: pointer; display: flex; align-items: center; justify-content: center;
-            transition: all 0.3s;
+            background: rgba(255, 0, 127, 0.1); border: 2px solid var(--neon-pink); color: #fff; font-size: 1.2rem;
+            width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;
         }
-
         .arrow-btn:hover { background: var(--neon-pink); box-shadow: 0 0 15px var(--neon-pink); }
 
-        /* --- LINEUP (SLIDES GRANDES DESACTIVADO SWIPE) --- */
+        /* --- LINEUP --- */
         .schedule-wrapper {
-            display: flex; overflow-x: auto;
-            touch-action: pan-y; /* Desactiva el swipe horizontal táctil */
-            scroll-behavior: smooth; /* Movimiento suave al tocar botones */
-            gap: 20px; padding: 10px 0 20px 0;
-            scrollbar-width: none; /* Oculta barra Firefox */
+            display: flex; overflow-x: auto; touch-action: pan-y; scroll-behavior: smooth;
+            gap: 20px; padding: 10px 0 20px 0; scrollbar-width: none;
         }
-        .schedule-wrapper::-webkit-scrollbar { display: none; } /* Oculta barra Chrome */
+        .schedule-wrapper::-webkit-scrollbar { display: none; }
 
         .dj-card {
-            min-width: 100%; max-width: 320px;
-            background: rgba(0,0,0,0.5); border: 1px solid var(--neon-pink);
-            border-radius: 20px; padding: 15px;
-            cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;
-            flex-shrink: 0; display: flex; flex-direction: column; align-items: center;
+            min-width: 100%; max-width: 320px; background: rgba(0,0,0,0.5); border: 1px solid var(--neon-pink);
+            border-radius: 20px; padding: 15px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center;
         }
-
         .dj-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255, 0, 127, 0.3); }
 
-        .dj-img {
-            width: 100%; height: 220px; border-radius: 15px;
-            object-fit: cover; margin-bottom: 15px; border: 1px solid var(--glass-border);
-        }
-
+        .dj-img { width: 100%; height: 220px; border-radius: 15px; object-fit: cover; margin-bottom: 15px; border: 1px solid var(--glass-border); }
         .dj-time { font-size: 0.9rem; color: var(--neon-pink); margin-bottom: 5px; font-weight: bold; letter-spacing: 1px; }
         .dj-name { font-weight: 700; font-size: 1.3rem; text-transform: uppercase; margin-bottom: 15px; }
 
         .dj-btn {
-            padding: 12px 20px; font-weight: 700; font-size: 0.85rem;
-            text-transform: uppercase; color: #fff; background: transparent;
-            border: 1px solid var(--neon-pink); border-radius: 30px; cursor: pointer;
-            width: 100%; transition: all 0.3s ease; pointer-events: none;
+            padding: 12px 20px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: #fff; background: transparent;
+            border: 1px solid var(--neon-pink); border-radius: 30px; cursor: pointer; width: 100%; transition: all 0.3s ease; pointer-events: none;
         }
         .dj-card:hover .dj-btn { background: var(--neon-pink); box-shadow: 0 0 15px var(--neon-pink); }
-
-        /* --- INSTRUCTIVO 9:16 CARDS --- */
-        .slider-wrapper-inst {
-            display: flex; overflow-x: auto;
-            touch-action: pan-y; /* Desactiva swipe */
-            scroll-behavior: smooth;
-            gap: 20px; padding: 10px 0;
-            scrollbar-width: none;
-        }
-        .slider-wrapper-inst::-webkit-scrollbar { display: none; }
-
-        .slide-card-inst {
-    position: relative; 
-    
-    /* EL SECRETO ESTÁ EN ESTAS 3 LÍNEAS */
-    width: 280px; /* Forzamos un ancho angosto tipo celular */
-    height: 500px; /* Forzamos la altura para que sea vertical */
-    flex-shrink: 0; /* Evita que el contenedor la aplaste */
-
-    scroll-snap-align: center;
-    border-radius: 20px; 
-    border: 1px solid var(--neon-pink);
-    overflow: hidden; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: flex-end; 
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
-}
-
-        /* Imagen de fondo de la tarjeta */
-        .inst-bg {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-    object-fit: cover; /* Recorta los sobrantes sin deformar la imagen */
-    z-index: 1; 
-    opacity: 0.8;
-}
-
-        /* Gradiente para que el texto se lea bien */
-        .inst-overlay {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, rgba(10,5,20,1) 0%, rgba(10,5,20,0.8) 40%, transparent 100%);
-            z-index: 2;
-        }
-
-        /* Contenedor del texto y botón */
-        .inst-content {
-            position: relative; z-index: 3;
-            padding: 25px 20px; text-align: left;
-        }
-
-        .step-number {
-            width: 35px; height: 35px; background: var(--neon-pink);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-weight: bold; margin-bottom: 10px; box-shadow: 0 0 15px var(--neon-pink);
-        }
-
-        .inst-content h4 { font-size: 1.3rem; margin-bottom: 10px; color: #fff; }
-        .inst-content p { font-size: 0.9rem; color: #ddd; line-height: 1.4; margin-bottom: 20px; }
-
-        .btn-media {
-            width: 100%; padding: 12px; font-weight: bold; text-transform: uppercase;
-            border: 1px solid var(--neon-pink); background: rgba(255, 0, 127, 0.2);
-            color: #fff; border-radius: 30px; cursor: pointer; transition: 0.3s;
-        }
-        .btn-media:hover { background: var(--neon-pink); box-shadow: 0 0 15px var(--neon-pink); }
-
-        .btn-unlock {
-            background: var(--neon-pink); font-size: 1.1rem;
-            box-shadow: 0 0 20px var(--neon-pink); animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 0, 127, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 0, 127, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 0, 127, 0); }
-        }
-
-        /* --- TICKETS SECTION (OCULTO INICIALMENTE) --- */
-        #tickets { display: none; }
-
-        .iframe-container { width: 100%; border-radius: 10px; overflow: hidden; }
-        .iframe-container iframe { width: 100% !important; max-width: 600px; border: none; border-radius: 10px; }
 
         /* --- MODALES --- */
         .modal {
             display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(5px);
-            z-index: 100; justify-content: center; align-items: center; padding: 20px;
+            background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(5px); z-index: 100; justify-content: center; align-items: center; padding: 20px;
         }
-
         .modal-content {
-            background: rgba(20, 10, 30, 0.95); border: 1px solid var(--neon-pink);
-            box-shadow: 0 0 30px rgba(255, 0, 127, 0.3); border-radius: 20px;
-            padding: 30px; text-align: center; max-width: 400px; width: 100%;
-            position: relative; max-height: 90vh; overflow-y: auto;
+            background: rgba(20, 10, 30, 0.95); border: 1px solid var(--neon-pink); box-shadow: 0 0 30px rgba(255, 0, 127, 0.3); border-radius: 20px;
+            padding: 30px; text-align: center; max-width: 400px; width: 100%; position: relative; max-height: 90vh; overflow-y: auto;
         }
+        .close-btn { position: absolute; top: 15px; right: 20px; color: #fff; font-size: 2rem; cursor: pointer; background: none; border: none; z-index: 5; }
 
-        .close-btn {
-            position: absolute; top: 15px; right: 20px; color: #fff;
-            font-size: 2rem; cursor: pointer; background: none; border: none; z-index: 5;
-        }
-
-        /* Modal DJ Docs */
         .modal-img { width: 100%; height: 200px; border-radius: 15px; object-fit: cover; margin-bottom: 15px; border: 2px solid var(--neon-pink); }
         .modal-desc { margin-top: 15px; font-size: 0.95rem; color: #ccc; line-height: 1.5; }
         .modal-extra-imgs { display: flex; gap: 10px; margin-top: 20px; justify-content: space-between; }
         .modal-extra-imgs img { width: 48%; height: 120px; object-fit: cover; border-radius: 10px; border: 1px solid var(--glass-border); display: none; }
 
-        /* Modal Media (Video/Img Tutorial) */
-        #media-modal-content { padding: 15px; padding-top: 50px; background: #000; }
-        #media-container { width: 100%; border-radius: 15px; overflow: hidden; display: flex; justify-content: center; }
-        #media-container video, #media-container img { width: 100%; max-height: 80vh; object-fit: contain; border-radius: 10px; }
-
-        /* --- BOTÓN WHATSAPP --- */
-        .btn-support {
-            display: inline-block;
-            padding: 12px 25px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            color: #fff;
-            background: rgba(37, 211, 102, 0.1); /* Verde transparente */
-            border: 2px solid #25D366; /* Verde WhatsApp */
-            border-radius: 30px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(37, 211, 102, 0.5) inset, 0 0 10px rgba(37, 211, 102, 0.5);
+        /* --- ESTILOS DEL CONTADOR --- */
+        #map-timer-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 5, 20, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease;
         }
 
-        .btn-support:hover {
-            background: #25D366;
-            box-shadow: 0 0 20px #25D366 inset, 0 0 20px #25D366;
+        .timer-grid {
+            display: flex;
+            gap: 15px;
+        }
+
+        .timer-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 60px;
+        }
+
+        .timer-item span {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+        }
+
+        .timer-item label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            color: var(--neon-pink);
+            margin-top: 5px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -344,143 +254,120 @@
             <h2 class="title-main">ENTRE GRANDES</h2>
             <h3 class="title-sub">POOL PARTY</h3>
             <div class="hero-buttons">
-                <a href="#description" class="btn">Ver Detalles</a>
-                <a href="#instructivo" class="btn">Adquirir Acceso</a>
+                <a href="#tickets" class="btn" style="background: var(--neon-pink);">Adquirir Acceso</a>
+                <a href="#detalles" class="btn">Ver Detalles</a>
             </div>
         </section>
 
-        <section id="description" class="section-container">
-            <h3 class="section-title">El Evento</h3>
-            <p class="description-text">Después de grabar un set especial, Los Grandes y Viva La Dance se unen para celebrar su estreno como se debe: pool party, sonido fino y vibra nocturna que escala con cada hora. 🎶🌙</p>
-            <p class="description-text">Un encuentro donde el techno, la energía colectiva y el espacio se alinean para crear una experiencia inmersiva — desde open decks hasta un cierre abierto que promete extender la noche. ⚡🖤</p>
-            <p class="description-text">Prepárate para bailar dentro y fuera del agua, rodeado de luces, texturas y una curaduría musical pensada para llevarte de menos a más. 💃🕺💦</p>
+        <section id="tickets" class="section-container">
+            <h3 class="section-title">Tickets</h3>
+            
+            <div class="pricing-box">
+                <div class="price-item">
+                    <span>Preventa</span>
+                    <strong>$100</strong>
+                    <p>Vence: 1 Mayo<br>12:00 hrs</p>
+                </div>
+                <div class="price-item">
+                    <span>Taquilla</span>
+                    <strong>$150</strong>
+                    <p>NO EFECTIVO, solo Transfer</p> 
+                </div>
+            </div>
+
+            <p class="warning-text">⚠️ Pago Únicamente por transferencia Bancaria. <strong>Incluir nombre completo en concepto de pago.</strong></p>
+
+            <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776175265/N%C3%BAmero_de_cuenta_6013_0177_2101_16__Transferencia_de_Azteca_a_Azteca__CLABE__SPEI___1271_5000_1772_101166-removebg-preview_pab6k5.png" alt="Datos Bancarios" class="bank-img">
+
+            <p class="success-text">✅ Una vez validado tu pago, recibirás tu QR de acceso.</p>
+
+            <a href="https://wa.me/526142072408?text=Hola,%20adjunto%20mi%20comprobante%20de%20pago%20para%20Viva%20La%20Dance%20Entre%20Grandes%20Pool%20Party" target="_blank" class="btn-wa">
+                📲 Enviar Comprobante
+            </a>
+        </section>
+
+        <section id="detalles" class="section-container">
+            <h3 class="section-title">Ubicación y Fecha</h3>
+            
+            <div class="event-info">
+                <p><i>📅</i> <strong>Fecha:</strong> Miércoles 29 de Abril</p>
+                <p><i>⏰</i> <strong>Hora:</strong> 12:00 PM – Fin</p>
+                <p><i>📍</i> <strong>Lugar:</strong> Ubicación por revelar</p>
+            </div>
+
+            <div id="countdown-label" style="margin-bottom: 10px; font-weight: bold; color: var(--neon-pink); text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem;">
+                La ubicación exacta se revelará en:
+            </div>
+
+            <div class="map-container" style="position: relative;">
+                <div id="map-timer-overlay">
+                    <div class="timer-grid">
+                        <div class="timer-item"><span id="days">00</span><label>Días</label></div>
+                        <div class="timer-item"><span id="hours">00</span><label>Hrs</label></div>
+                        <div class="timer-item"><span id="minutes">00</span><label>Min</label></div>
+                        <div class="timer-item"><span id="seconds">00</span><label>Seg</label></div>
+                    </div>
+                </div>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113941.1398576402!2d-106.18349277660235!3d28.63344686523933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea433890209677%3A0xe54955b9e0722f6e!2sChihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1713200000000!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p class="description-text">Después de grabar un set especial, Los Grandes y Viva La Dance se unen para celebrar su estreno a lo Grande: pool party, sonido fino y buena vibra que escala con cada hora. 🎶🌙</p>
+            <p class="description-text">Un encuentro donde el house, techno, la energía colectiva y el espacio se alinean para crear una experiencia inmersiva⚡🖤</p>
+            <p class="description-text" style="margin-bottom: 0;">Prepárate para bailar dentro y fuera del agua, rodeado de luces, texturas y una curaduría musical pensada para llevarte de menos a más. 💃🕺💦</p>
         </section>
 
         <section id="lineup" class="section-container">
             <h3 class="section-title">Line Up / Time Table</h3>
             
-            <div class="dj-card" data-name="Open Decks" data-time="15:00 – 17:00" 
-     data-img="https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=400&q=80" 
-     data-desc="El inicio de la tarde. Calentando motores junto a la alberca con talentos locales."
-     data-apply="true">
-    <img src="https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=400&q=80" alt="Open Decks" class="dj-img">
-    <span class="dj-time">15:00 – 17:00</span>
-    <span class="dj-name">Open Decks 🎛️</span>
-    <button class="dj-btn">Ver Detalles</button>
-</div>
-                <div class="dj-card" data-name="DaXikleZ" data-time="17:00 – 18:00" data-img="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776119524/Daxiklez_Cuervo_ect4jg.jpg" data-img2="" data-img3="" data-desc="Inyectando la primera dosis fuerte de energía mientras cae el atardecer.">
-                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776119439/SaveGram.App_653822462_17938733412179325_2860661904147528640_n_dkawcg.jpg" alt="DaXikleZ" class="dj-img">
-                    <span class="dj-time">17:00 – 18:00</span><span class="dj-name">DaXikleZ 🔊</span><button class="dj-btn">Ver Detalles</button>
+            <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776179744/pool_party_qa0nhj.png" alt="Flyer Line Up Oficial" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 15px; border: 1px solid var(--neon-pink); margin-bottom: 25px; box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);">
+            
+            <div class="schedule-wrapper" id="carousel-lineup">
+                <div class="dj-card">
+                    <img src="https://images.unsplash.com/photo-1516873240891-4bf014598ab4?auto=format&fit=crop&w=400&q=80" alt="Open Decks" class="dj-img">
+                    <span class="dj-time">15:00 – 17:00</span>
+                    <span class="dj-name">Open Decks 🎛️</span>
                 </div>
-                <div class="dj-card" data-name="Beto Ramos B2B Tota" data-time="18:00 – 19:00" data-img="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120129/elimina_a_los_202604131641_fiei9l.jpg" data-img2="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776119946/SaveGram.App_439935880_18392469001075634_3212311014721291755_n_vrtcxz.jpg" data-img3="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776119946/SaveGram.App_622484400_18106405378783827_689228140797893058_n_sp3siz.jpg" data-desc="Llevando la vibra al siguiente nivel con selecciones exclusivas.">
-                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120129/elimina_a_los_202604131641_fiei9l.jpg" alt="Beto Ramos" class="dj-img">
-                    <span class="dj-time">18:00 – 19:00</span><span class="dj-name">Beto Ramos B2B Tota 🎧</span><button class="dj-btn">Ver Detalles</button>
-                </div>
-                <div class="dj-card" data-name="Los Grandes" data-time="19:00 – 20:00" data-img="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120083/Grandes_Cuervo_5_m4aocx.jpg" data-img2="" data-img3="" data-desc="Sonidos eléctricos y transiciones precisas para dominar la noche.">
-                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120730/Ajusta_y_rescala_202604131651_cr8ihq.jpg" alt="Los Grandes" class="dj-img">
-                    <span class="dj-time">19:00 – 20:00</span><span class="dj-name">Los Grandes ⚡</span><button class="dj-btn">Ver Detalles</button>
-                </div>
-                <div class="dj-card" data-name="Oxxid" data-time="20:00 – 21:00" data-img="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121062/ajusta_y_reescala_202604131657_txyzh7.jpg" data-img2="" data-img3="" data-desc="Puro fuego en los decks. La pista llega a su punto máximo.">
-                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120535/rescala_y_ajusta_202604131647_hfmqlp.jpg" alt="Oxxid" class="dj-img">
-                    <span class="dj-time">20:00 – 21:00</span><span class="dj-name">Oxxid 🔥</span><button class="dj-btn">Ver Detalles</button>
-                </div>
-                <div class="dj-card" data-name="Luis Contreras" data-time="21:00 – END" data-img="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121266/Ajusya_y_rescala_202604131700_q5uhp9.jpg" data-img2="" data-img3="" data-desc="El cierre de oro. Invitado especial para reventar la noche.">
-                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121224/4ew_qswfgh.jpg" alt="Luis Contreras" class="dj-img">
-                    <span class="dj-time">21:00 – END</span><span class="dj-name">Luis Contreras 🎛️</span><button class="dj-btn">Ver Detalles</button>
-                </div>
-            </div>
-
-          <!-- <div class="carousel-controls">
-                <button class="arrow-btn" onclick="moveSlide('carousel-lineup', -1)">&#10094;</button>
-                <button class="arrow-btn" onclick="moveSlide('carousel-lineup', 1)">&#10095;</button>
-            </div>-->
-        </section>
-
-        <section id="instructivo" class="section-container">
-            <h3 class="section-title">Guía de Compra</h3>
-            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 25px; margin-top: -10px; line-height: 1.4;">
-        Sigue los pasos y haz clic en los botones para visualizar los ejemplos multimedia antes de finalizar tu orden.
-    </p>
-            <div class="slider-wrapper-inst" id="carousel-inst">
                 
-                <div class="slide-card-inst">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" class="inst-bg">
-                    <div class="inst-overlay"></div>
-                    <div class="inst-content">
-                        <div class="step-number">1</div>
-                        <h4>Llena Tus Datos</h4>
-                        <p>Haz clic en "Solicitar Unirse" y llena los datos: Nombre Completo, Correo y cantidad de accesos.</p>
-                        <button class="btn-media" onclick="openMedia('video', 'https://res.cloudinary.com/dn4m0kr7j/video/upload/q_auto/f_auto/v1776117134/0413_3_xyfbbz.mp4')">Ver Ejemplo</button>
-                    </div>
+                <div class="dj-card">
+                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776119439/SaveGram.App_653822462_17938733412179325_2860661904147528640_n_dkawcg.jpg" alt="DaXikleZ" class="dj-img">
+                    <span class="dj-time">17:00 – 18:00</span>
+                    <span class="dj-name">DaXikleZ 🔊</span>
                 </div>
-
-                <div class="slide-card-inst">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=400&q=80" class="inst-bg">
-                    <div class="inst-overlay"></div>
-                    <div class="inst-content">
-                        <div class="step-number">2</div>
-                        <h4>Realiza tu pago</h4>
-                        <p>Solo por transferencia bancaria. Incluye tu nombre en concepto tal cual lo capturaste en el paso anterior.</p>
-                        <button class="btn-media" onclick="openMedia('image', 'https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776116837/N%C3%BAmero_de_cuenta_6013_0177_2101_16_Transferencia_de_Azteca_a_Azteca_CLABE_SPEI_1271_5000_1772_101166_q0ycxc.jpg')">Ver Datos</button>
-                    </div>
+                
+                <div class="dj-card">
+                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120129/elimina_a_los_202604131641_fiei9l.jpg" alt="Beto Ramos" class="dj-img">
+                    <span class="dj-time">18:00 – 19:00</span>
+                    <span class="dj-name">Beto Ramos B2B Tota 🎧</span>
                 </div>
-
-                <div class="slide-card-inst">
-                    <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&q=80" class="inst-bg">
-                    <div class="inst-overlay"></div>
-                    <div class="inst-content">
-                        <div class="step-number">3</div>
-                        <h4>Revisa tu Correo</h4>
-                        <p>Una vez validado tu pago recibirás tu QR de acceso en un plazo máximo de 24 horas.</p>
-                        <button class="btn-media" onclick="openMedia('video', 'https://res.cloudinary.com/dn4m0kr7j/video/upload/q_auto/f_auto/v1776117499/0413_3_1_rlbvfd.mp4')">Ver Ejemplo</button>
-                    </div>
+                
+                <div class="dj-card">
+                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120730/Ajusta_y_rescala_202604131651_cr8ihq.jpg" alt="Los Grandes" class="dj-img">
+                    <span class="dj-time">19:00 – 20:00</span>
+                    <span class="dj-name">Los Grandes ⚡</span>
                 </div>
-
-                <div class="slide-card-inst">
-                    <img src="https://images.unsplash.com/photo-1621360811013-c76831f1628f?auto=format&fit=crop&w=400&q=80" class="inst-bg">
-                    <div class="inst-overlay"></div>
-                    <div class="inst-content">
-                        <div class="step-number">4</div>
-                        <h4>A Wallet (Opcional)</h4>
-                        <p>Descarga el archivo .pkpass y agrégalo a tu wallet para facilitar el acceso rápido.</p>
-                        <button class="btn-media" onclick="openMedia('video', 'https://res.cloudinary.com/dn4m0kr7j/video/upload/q_auto/f_auto/v1776117839/0413_3_2_m1ihnv.mp4')">Ver Ejemplo</button>
-                    </div>
+                
+                <div class="dj-card">
+                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776120535/rescala_y_ajusta_202604131647_hfmqlp.jpg" alt="Oxxid" class="dj-img">
+                    <span class="dj-time">20:00 – 21:00</span>
+                    <span class="dj-name">Oxxid 🔥</span>
                 </div>
-
-                <div class="slide-card-inst">
-                    <img src="https://images.unsplash.com/photo-1533174000220-9d1da42111eb?auto=format&fit=crop&w=400&q=80" class="inst-bg">
-                    <div class="inst-overlay"></div>
-                    <div class="inst-content">
-                        <div class="step-number">5</div>
-                        <h4>¡Listo para disfrutar!</h4>
-                        <p>Muestra tu código QR en la entrada desde tu celular. ¡Nos vemos en la pista!</p>
-                        
-                        <button class="btn-media btn-unlock" onclick="unlockTickets()">Adquirir Acceso</button>
-                    </div>
+                
+                <div class="dj-card">
+                    <img src="https://res.cloudinary.com/dn4m0kr7j/image/upload/q_auto/f_auto/v1776121224/4ew_qswfgh.jpg" alt="Luis Contreras" class="dj-img">
+                    <span class="dj-time">21:00 – END</span>
+                    <span class="dj-name">Luis Contreras 🎛️</span>
                 </div>
-
             </div>
 
             <div class="carousel-controls">
-                <button class="arrow-btn" onclick="moveSlide('carousel-inst', -1)">&#10094;</button>
-                <button class="arrow-btn" onclick="moveSlide('carousel-inst', 1)">&#10095;</button>
+                <button class="arrow-btn" onclick="moveSlide('carousel-lineup', -1)">❮</button>
+                <button class="arrow-btn" onclick="moveSlide('carousel-lineup', 1)">❯</button>
             </div>
         </section>
 
-        <section id="tickets" class="section-container">
-            <h3 class="section-title">Tickets Oficiales</h3>
-            <div class="iframe-container">
-                <iframe
-                  src="https://luma.com/embed/event/evt-HlAFM104IQfPYNt/simple"
-                  height="450" frameborder="0"
-                  style="border: 1px solid #ff007f55; border-radius: 4px; width: 100%;"
-                  allow="fullscreen; payment" aria-hidden="false" tabindex="0"
-                ></iframe>
-            </div>
-        </section>
-        <section id="soporte" class="section-container" style="background: transparent; border: none; box-shadow: none; margin-top: 10px; margin-bottom: 50px;">
-            <a href="https://wa.me/523330547185" target="_blank" class="btn-support">
-                💬 ¿Problemas? Contacta a soporte
+        <section id="soporte" class="section-container" style="background: transparent; border: none; box-shadow: none; margin-top: -10px; margin-bottom: 50px;">
+            <a href="https://wa.me/523330547185" target="_blank" class="btn-wa" style="font-size: 0.9rem; padding: 12px 20px;">
+                💬 ¿Dudas? Contacta a soporte
             </a>
         </section>
     </main>
@@ -495,7 +382,7 @@
             
             <div id="modal-apply-container" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255,0,127,0.05); border: 1px dashed var(--neon-pink); border-radius: 15px;">
                 <p style="font-size: 0.95rem; color: #fff; margin-bottom: 12px;">¿Te gustaría tocar en este espacio?</p>
-                <a href="https://wa.me/523330547185?text=Hola,%20quisiera%20aplicar%20al%20open%20decks%20de%20Viva%20la%20dance%20Entre%20Grandes%20Pool%20Party" target="_blank" class="btn-support" style="padding: 10px 20px; font-size: 0.8rem;">
+                <a href="https://wa.me/526142072408?text=Hola,%20quisiera%20aplicar%20al%20open%20decks%20de%20Viva%20la%20dance%20Entre%20Grandes%20Pool%20Party" target="_blank" class="btn-wa" style="padding: 10px 20px; font-size: 0.8rem; border-color: var(--neon-pink); background: rgba(255, 0, 127, 0.2); box-shadow: none;">
                     Aplica Aquí
                 </a>
             </div>
@@ -507,35 +394,14 @@
         </div>
     </div>
 
-    <div id="media-modal" class="modal">
-        <div class="modal-content" id="media-modal-content">
-            <button class="close-btn" onclick="closeMediaModal()">&times;</button>
-            <div id="media-container">
-                </div>
-        </div>
-    </div>
-
     <script>
-        /* --- LÓGICA DE LOS CARRUSELES (FLECHAS) --- */
+        /* --- LÓGICA DEL CARRUSEL --- */
         function moveSlide(carouselId, direction) {
             const container = document.getElementById(carouselId);
-            // Obtenemos el ancho del primer elemento hijo
             const cardWidth = container.firstElementChild.offsetWidth;
-            const gap = 20; // El gap definido en CSS
+            const gap = 20;
             const scrollAmount = (cardWidth + gap) * direction;
             container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
-
-        /* --- LÓGICA DESBLOQUEO LUMA --- */
-        function unlockTickets() {
-            // Ocultamos tutorial
-            document.getElementById('instructivo').style.display = 'none';
-            // Mostramos Luma
-            const ticketsSection = document.getElementById('tickets');
-            ticketsSection.style.display = 'block';
-            
-            // Scroll suave hacia Luma
-            ticketsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         /* --- LÓGICA MODAL DJs --- */
@@ -570,36 +436,45 @@
             });
         });
 
-        /* --- LÓGICA MODAL MEDIA TUTORIAL --- */
-        const mediaModal = document.getElementById('media-modal');
-        const mediaContainer = document.getElementById('media-container');
-
-        function openMedia(type, url) {
-            mediaContainer.innerHTML = ''; // Limpiar anterior
-            
-            if (type === 'video') {
-                mediaContainer.innerHTML = `<video src="${url}" autoplay loop playsinline controls style="width: 100%; border-radius: 10px;"></video>`;
-            } else if (type === 'image' || type === 'gif') {
-                mediaContainer.innerHTML = `<img src="${url}" style="width: 100%; border-radius: 10px;">`;
-            }
-            mediaModal.style.display = 'flex';
-        }
-
-        function closeMediaModal() {
-            mediaContainer.innerHTML = ''; // Esto destruye el tag video y lo detiene
-            mediaModal.style.display = 'none';
-        }
-
-        /* --- CERRAR CUALQUIER MODAL --- */
+        /* --- CERRAR MODAL --- */
         function closeModal(id) {
             document.getElementById(id).style.display = 'none';
         }
 
-        // Cerrar tocando fuera
         window.addEventListener('click', (e) => {
             if (e.target === djModal) { djModal.style.display = 'none'; }
-            if (e.target === mediaModal) { closeMediaModal(); }
         });
+
+        /* --- LÓGICA DE CUENTA REGRESIVA --- */
+        function updateCountdown() {
+            // Fecha objetivo: Miércoles 29 de Abril 2026 12:00 PM CST (UTC-6)
+            const targetDate = new Date("2026-04-29T12:00:00-06:00").getTime();
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference <= 0) {
+                document.getElementById('map-timer-overlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('map-timer-overlay').style.display = 'none';
+                    document.getElementById('countdown-label').innerText = "¡Ubicación Revelada!";
+                }, 1000);
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+        }
+
+        // Ejecutar cada segundo
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Ejecución inicial
     </script>
 </body>
 </html>
